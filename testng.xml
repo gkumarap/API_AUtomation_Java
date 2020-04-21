@@ -2,8 +2,8 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="API Suite" parallel="tests">
 	<test name="Test on Rest API ">
-		<classes>
-			<class name="" />
-		</classes>
+	<packages>
+<!--		<package name=></package>-->
+	</packages>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

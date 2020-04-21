@@ -56,11 +56,19 @@ public class postRequests {
         info.setPhone("78945624822");
         info.setAddress("new address");
 
+        PostObject_info info2 = new PostObject_info();
+
+        info2.setEmail("Test@gmail.com");
+        info2.setPhone("4578930232");
+        info2.setAddress("second address");
+
+
+
         PostObject postsPayload = new PostObject();
-        postsPayload.setId("4");
+        postsPayload.setId("6");
         postsPayload.setTitle("New title");
         postsPayload.setAuthor("New author");
-        postsPayload.setInfo(info);
+        postsPayload.setInfo(new PostObject_info[]{info,info2});
 
 
         Response response = given().when().contentType(ContentType.JSON).body(postsPayload).

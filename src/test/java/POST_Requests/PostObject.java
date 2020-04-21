@@ -6,15 +6,16 @@ public class PostObject {
     private String title;
     private String author;
 
-    public PostObject_info getInfo() {
+    public PostObject_info[] getInfo() {
         return info;
     }
 
-    public void setInfo(PostObject_info info) {
+    public void setInfo(PostObject_info[] info) {
         this.info = info;
     }
 
-    private PostObject_info info;
+    private PostObject_info[] info;
+
 
 
     public String getAuthor() {
