@@ -2,8 +2,10 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="API Suite" parallel="tests">
 	<test name="Test on Rest API ">
-	<packages>
-<!--		<package name=></package>-->
-	</packages>
+		<classes>
+			<class name="GetRequests.firstGetRequest"></class>
+			<class name="GetRequests.openWeatherMap_api"></class>
+			<class name="POST_Requests.postRequests"></class>
+		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
